@@ -1,0 +1,13 @@
+<div class="weather panel panel-custom">
+    <div class="panel-heading"> {{parseDate(useDayForecast.dt) | date:'medium'}}</div>
+    <div class="panel-body">
+        <div>
+            <p class="lead">
+                {{useDayForecast.main.temp | number:1}}&#176;C
+            </p>
+            <p class="lead">
+                {{useDayForecast.wind.speed | number:1}}&nbsp;mph
+            </p>
+        </div>
+    </div>
+</div>
